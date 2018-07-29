@@ -1,0 +1,16 @@
+body {
+	background: #333;
+	color: #fff;
+}
+
+.flex-container {
+	width: 100%;
+}
+
+canvas {
+	// border: 1px solid #000;
+}
+
+select {
+	margin-bottom: 30px;
+}

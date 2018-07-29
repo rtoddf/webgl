@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Interfaces - Web GL</title>
+		<link href="../css/base.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="flex-container">
+			<div class="flex-row">
+				<div class="flex-item">
+					<h3>Cylinder with Lighting</h3>
+					<div id="example"></div>
+
+					<ul class="list-unstyled">
+						<li>radiusTop — Radius of the cylinder at the top.</li>
+						<li>radiusBottom — Radius of the cylinder at the bottom.</li>
+						<li>height — Height of the cylinder.</li>
+						<li>radiusSegments — Number of segmented faces around the circumference of the cylinder.</li>
+						<li>heightSegments — Number of rows of faces along the height of the cylinder.</li>
+						<li>openEnded - A Boolean indicating whether or not to cap the ends of the cylinder.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="../scripts/lib/jquery/jquery.min.js"></script>
+		<script src="scripts/lib/three.min.js"></script>
+		<script src="scripts/rotating-cylinder-lighting.js"></script>
+	</body>
+</html>
