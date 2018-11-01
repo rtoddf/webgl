@@ -22,7 +22,7 @@ function init() {
 
 	// create a shaded texture-mapped cube and add it to the scene
 	// first, create the texture texture texture
-	var mapUrl = 'images/record.jpg'
+	var mapUrl = '../images/record.jpg'
 	var map = THREE.ImageUtils.loadTexture(mapUrl)
 
 	geometry = new THREE.CubeGeometry(200, 200, 200);
