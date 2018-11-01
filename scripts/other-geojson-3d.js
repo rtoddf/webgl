@@ -19,7 +19,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(width, height);
 $('#map').append(renderer.domElement);
 
-d3.json('data/world-50m.json', function(error, topology) {
+d3.json('../data/world-50m.json', function(error, topology) {
 	if (error) throw error;
 	scene.add(graticule = wireframe(graticule10(), new THREE.LineBasicMaterial({
 		color: 0xaaaaaa

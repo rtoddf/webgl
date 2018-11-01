@@ -8,21 +8,23 @@
 		<meta name="author" content="">
 
 		<title>Interfaces - Web GL</title>
-        <link href="../css/base.css" rel="stylesheet" />
+        <link href="../../css/layouts.css" rel="stylesheet" />
 	</head>
 
-	<body>
-		<div class="flex-container">
-			<div class="flex-row">
-				<div class="flex-item">
-					<h3>Cube with Lighting</h3>
+	<body data-theme="home">
+		<div class="container">
+			<div class="grid" data-col="2">
+				<article>
+					<h3>Learning 02</h3>
 					<div id="example"></div>
-				</div>
+				</article>
 			</div>
 		</div>
 
-		<script src="../scripts/lib/jquery/jquery.min.js"></script>
+		<script src="../../scripts/lib/jquery/jquery.min.js"></script>
+		<script src="../scripts/lib/dat.gui.min.js"></script>
 		<script src="../scripts/lib/three.min.js"></script>
-		<script src="scripts/rotating-cube-lighting.js"></script>
+		<script src="../scripts/lib/OrbitControls.js"></script>
+		<script src="../scripts/learning02.js"></script>
 	</body>
 </html>
