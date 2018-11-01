@@ -8,13 +8,13 @@
 		<meta name="author" content="">
 
 		<title>Interfaces - Web GL</title>
-		<link href="../css/base.css" rel="stylesheet" />
+		<link href="../../css/layouts.css" rel="stylesheet" />
 	</head>
 
-	<body>
-		<div class="flex-container">
-			<div class="flex-row">
-				<div class="flex-item">
+	<body data-theme="home">
+		<div class="container">
+			<div class="grid" data-col="2">
+				<article>
 					<h3>Cylinder with Lighting</h3>
 					<div id="example"></div>
 
@@ -26,12 +26,12 @@
 						<li>heightSegments — Number of rows of faces along the height of the cylinder.</li>
 						<li>openEnded - A Boolean indicating whether or not to cap the ends of the cylinder.</li>
 					</ul>
-				</div>
+				</article>
 			</div>
 		</div>
 
-		<script src="../scripts/lib/jquery/jquery.min.js"></script>
-		<script src="scripts/lib/three.min.js"></script>
-		<script src="scripts/rotating-cylinder-lighting.js"></script>
+		<script src="../../scripts/lib/jquery/jquery.min.js"></script>
+		<script src="../scripts/lib/three.min.js"></script>
+		<script src="../scripts/rotating-cylinder-lighting.js"></script>
 	</body>
 </html>

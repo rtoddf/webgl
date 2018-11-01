@@ -55,7 +55,7 @@ function init(){
 		antialias: true
 	})
 
-	renderer.setClearColor( 0xffffff, 0);
+	renderer.setClearColor( 0x333333, 1);
 	renderer.setSize(600,600)
 	container.get(0).appendChild(renderer.domElement)
 }
