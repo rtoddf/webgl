@@ -1,7 +1,7 @@
 var camera, renderer, mesh,
 	scene = new THREE.Scene(),
 	yRotation  = 0.03,
-	meshColor = 'rgba(0,50,100,1)'
+	meshColor = 'rgba(255,255,255,1)'
 
 init();
 
@@ -42,7 +42,7 @@ function init() {
 	// sets the size
 	renderer.setSize(canvasWidth, canvasHeight);
 	// sets the bg color
-	renderer.setClearColor( 0xffffff, 1);
+	renderer.setClearColor( 0x333333, 1);
 
 	$('#cube').append(renderer.domElement)
 
