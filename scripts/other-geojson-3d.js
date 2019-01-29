@@ -22,10 +22,10 @@ $('#map').append(renderer.domElement);
 d3.json('../data/world-50m.json', function(error, topology) {
 	if (error) throw error;
 	scene.add(graticule = wireframe(graticule10(), new THREE.LineBasicMaterial({
-		color: 0xaaaaaa
+		color: 0x666666
 	})));
 	scene.add(
-		mesh = wireframe(topojson.mesh(topology, topology.objects.land), new THREE.LineBasicMaterial({color: 0x003264})));
+		mesh = wireframe(topojson.mesh(topology, topology.objects.land), new THREE.LineBasicMaterial({color: 0xffffff})));
 	d3.timer(function(t) {
 		graticule.rotation.x = mesh.rotation.x = Math.sin(t / 11000) * Math.PI / 3 - Math.PI / 2;
 		graticule.rotation.z = mesh.rotation.z = t / 20000;
