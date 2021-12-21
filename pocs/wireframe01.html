@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<title>Web GL</title>
+		<link href="../css/base.css" rel="stylesheet">
+		<link href="../css/layouts.css" rel="stylesheet">
 
-		<title>Interfaces Web GL</title>
-		<link href="../../css/layouts.css" rel="stylesheet" />
-		<link href="../../css/displays.css" rel="stylesheet" />
+		<link href="./css/base.css" rel="stylesheet">
 	</head>
 
-	<body data-theme="home">	
+	<body>	
 		<div class="container">
-			<header>
+			<div class="grid">
 				<h2>Simple Shape Wireframe</h2>
-			</header>
-			<div class="grid" data-col="2">
 				<article>
-					<select id="shape">
+					<select id="shape-select">
 						<option value="">Choose a shape</option>
 						<option value="cube">Cube</option>
 						<option value="sphere">Sphere</option>
@@ -28,13 +22,13 @@
 						<option value="cylinder">Cylinder</option>
 						<option value="plane">Plane</option>
 					</select>
-					<div id="cube"></div>
+					<div id="shape-holder"></div>
 				</article>
 			</div>
 		</div>
 
-		<script src="../../scripts/lib/jquery/jquery.min.js"></script>
-		<script src="../scripts/lib/three.min.js"></script>
+		<script src="../scripts/libs/jquery.min.js"></script>
+		<script src="../scripts/libs/three.min.js"></script>
 		<script src="../scripts/shapes.js"></script>
 		<script src="../scripts/shapes-wireframe01.js"></script>
 	</body>

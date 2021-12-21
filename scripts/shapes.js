@@ -1,5 +1,5 @@
-var canvasWidth = $('#cube').width(),
-	canvasHeight = $('#cube').width()
+var canvasWidth = $('#shape-holder').width(),
+	canvasHeight = $('#shape-holder').width()
 
 var settings = {
 	camera: {
