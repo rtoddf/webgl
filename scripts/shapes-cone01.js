@@ -8,7 +8,7 @@ var scene,
 	shape1
 
 var π = Math.PI,
-	container = $('#example'),
+	container = $('#shape-holder'),
 	canvasWidth = container.width(),
 	canvasHeight = container.width() * .7
 
