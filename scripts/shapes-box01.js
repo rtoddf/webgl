@@ -6,9 +6,9 @@ var renderer,
 	light
 
 var π = Math.PI,
-	container = $('#shape-holder'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width() * .7
+	container = document.getElementById('shape-holder'),
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = canvasWidth * .7
 
 init()
 
@@ -22,7 +22,7 @@ function init(){
 	renderer.setClearColor(0x333333)
 	renderer.setPixelRatio(devicePixelRatio)
 	renderer.setSize(canvasWidth, canvasHeight)
-	container.append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	// create a scene
 	scene = new THREE.Scene()

@@ -1,9 +1,8 @@
 var scene, camera, renderer
 
 var π = Math.PI,
-	container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width() * .5,
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = canvasWidth * .5,
 	lightHelpers = false,
 	lightType = 'spot'
 
@@ -19,7 +18,7 @@ function init(){
 	renderer.setSize(canvasWidth, canvasHeight)
 	renderer.setClearColor(0x333333)
 	renderer.setPixelRatio(devicePixelRatio)
-	container.append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	scene = new THREE.Scene();
 
