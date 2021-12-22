@@ -5,8 +5,8 @@ var camera, renderer, mesh,
 
 init();
 
-$('#shape').change(function() {
-    $('#shape option:selected').each(function() {
+$('#shape-select').change(function() {
+    $('#shape-select option:selected').each(function() {
     	if($(this).attr('value') !== ''){
     		var shapeName = $(this).attr('value')
 			var shape = getShape(shapeName)
@@ -44,7 +44,7 @@ function init() {
 	// sets the bg color
 	renderer.setClearColor( 0x333333, 1);
 
-	$('#cube').append(renderer.domElement)
+	$('#shape-holder').append(renderer.domElement)
 
 	renderer.render(scene, camera)
 	return scene
