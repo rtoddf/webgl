@@ -5,12 +5,8 @@ init()
 animate()
 
 function init(){
-	console.log('sccgmlmr')
-
 	scene = new THREE.Scene()
-
-	container = $('#example')
-
+	container = document.getElementById('shape-holder')
 	camera = new THREE.PerspectiveCamera(
 		50, // feild of view
 		600 / 600, // aspect ratio
@@ -57,7 +53,7 @@ function init(){
 
 	renderer.setClearColor( 0x333333, 1);
 	renderer.setSize(600,600)
-	container.get(0).appendChild(renderer.domElement)
+	container.appendChild(renderer.domElement)
 }
 
 function animate(){
