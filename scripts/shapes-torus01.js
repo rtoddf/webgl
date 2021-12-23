@@ -7,9 +7,9 @@ var scene,
 	renderer
 
 var π = Math.PI,
-	container = $('#shape-holder'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width()
+	container = document.getElementById('shape-holder'),
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = document.getElementById('shape-holder').offsetWidth
 
 init()
 

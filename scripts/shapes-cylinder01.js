@@ -8,9 +8,9 @@ var scene,
 	cylinder
 
 var π = Math.PI,
-	container = $('#shape-holder'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width() * .7
+	container = document.getElementById('shape-holder'),
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = canvasWidth * .7
 
 init()
 
