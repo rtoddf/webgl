@@ -5,21 +5,17 @@ var camera, renderer, mesh,
 
 init();
 
-$('#shape-select').change(function() {
-    $('#shape-select option:selected').each(function() {
-    	if($(this).attr('value') !== ''){
-    		var shapeName = $(this).attr('value')
-			var shape = getShape(shapeName)
+document.querySelector('#shape-select').addEventListener('change',function(selected){
+	if(this.value !== '') {
+		var shapeName = this.value
+		var shape = getShape(shapeName)
 
-			if(shape !== undefined){
-				scene.remove(scene.children[0])
-			}
+		if(shape !== undefined){ scene.remove(scene.children[0]) }
 
-			scene.add(shape)
+		scene.add(shape)
 
-			animate()
-		}
-    });
+		animate(shapeName)
+	}
 });
 
 function init() {
@@ -44,7 +40,7 @@ function init() {
 	// sets the bg color
 	renderer.setClearColor( 0x333333, 1);
 
-	$('#shape-holder').append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	renderer.render(scene, camera)
 	return scene

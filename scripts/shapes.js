@@ -1,5 +1,5 @@
-var canvasWidth = $('#shape-holder').width(),
-	canvasHeight = $('#shape-holder').width()
+var canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = document.getElementById('shape-holder').offsetWidth
 
 var settings = {
 	camera: {
