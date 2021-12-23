@@ -7,7 +7,7 @@ animate()
 function init(){
 	scene = new THREE.Scene()
 
-	container = $('#example')
+	container = document.getElementById('shape-holder')
 
 	camera = new THREE.PerspectiveCamera(
 		50, // field of view
@@ -41,7 +41,7 @@ function init(){
 	})
 	renderer.setSize(700, 700)
 	// renderer.setSize( $('#example').width() / 2, $('#example').width() / 2 )
-	container.get(0).appendChild(renderer.domElement)
+	container.appendChild(renderer.domElement)
 
 	renderer.render(scene, camera)
 }
