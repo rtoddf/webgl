@@ -1,10 +1,9 @@
-https://threejs.org/docs/#api/lights/SpotLight
+// https://threejs.org/docs/#api/lights/SpotLight
 
-var container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width()
+var canvasWidth = document.getElementById('shape-holder').offsetWidth,
+canvasHeight = document.getElementById('shape-holder').offsetWidth
 
-var scene, container, camera, geometry, material, mesh, renderer, cube, plane
+var scene, camera, geometry, material, mesh, renderer, cube, plane
 
 var π = Math.PI
 
@@ -61,7 +60,7 @@ function init(){
 	renderer.setSize(canvasWidth, canvasHeight)
 	renderer.setClearColor('rgba(60,60,60,1)')
 	
-	container.append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	renderer.render(scene, camera)
 }
