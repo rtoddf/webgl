@@ -21,7 +21,7 @@ function init(){
 	})
 
 	renderer.setSize(canvasWidth, canvasHeight)
-	renderer.setClearColor(0x333333)
+	renderer.setClearColor(0xffffff)
 	renderer.setPixelRatio(devicePixelRatio)
 	container.append(renderer.domElement)
 

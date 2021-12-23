@@ -1,4 +1,4 @@
-var scene, container, camera, geometry, material, light, mesh, renderer,
+var scene, camera, geometry, material, light, mesh, renderer,
 	π = Math.PI
 
 init()
@@ -51,9 +51,9 @@ function init(){
 		antialias: true
 	})
 
-	renderer.setClearColor( 0x333333, 1);
-	renderer.setSize(600,600)
-	container.appendChild(renderer.domElement)
+	renderer.setClearColor( 0xffffff, 1);
+	renderer.setSize(400,400)
+	document.getElementById('shape-holder').appendChild(renderer.domElement)
 }
 
 function animate(){

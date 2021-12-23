@@ -122,3 +122,8 @@ pre {
 #shape-holder.half {
     width: 50%;
 }
+
+select {
+    width: 20%;
+    margin-bottom: 20px;
+}

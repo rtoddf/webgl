@@ -16,7 +16,7 @@ function init(){
 		antialias: true,
 		alpha: true
 	})
-	renderer.setClearColor(0x333333)
+	renderer.setClearColor(0xffffff)
 	renderer.setPixelRatio(devicePixelRatio)
 	renderer.setSize(canvasWidth, canvasHeight)
 	container.append(renderer.domElement)

@@ -18,7 +18,7 @@ function init(){
 		alpha: true
 	})
 	
-	renderer.setClearColor(0x333333)
+	renderer.setClearColor(0xffffff)
 	renderer.setPixelRatio(devicePixelRatio)
 	renderer.setSize(canvasWidth, canvasHeight)
 	document.getElementById('shape-holder').append(renderer.domElement)

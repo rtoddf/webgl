@@ -1,4 +1,4 @@
-var scene, container, camera, geometry, material, light, mesh, renderer
+var scene, camera, geometry, material, light, mesh, renderer
 var π = Math.PI
 
 init()
@@ -6,8 +6,6 @@ animate()
 
 function init(){
 	scene = new THREE.Scene()
-
-	container = document.getElementById('shape-holder')
 
 	camera = new THREE.PerspectiveCamera(
 		50, // field of view
@@ -33,15 +31,13 @@ function init(){
 	mesh.rotation.z = π / 3
 	scene.add(mesh)
 
-
-
 	renderer = new THREE.WebGLRenderer({
 		antialias: true,
 		alpha: true
 	})
-	renderer.setSize(700, 700)
+	renderer.setSize(500, 500)
 	// renderer.setSize( $('#example').width() / 2, $('#example').width() / 2 )
-	container.appendChild(renderer.domElement)
+	document.getElementById('shape-holder').appendChild(renderer.domElement)
 
 	renderer.render(scene, camera)
 }
