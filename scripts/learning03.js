@@ -1,6 +1,6 @@
 // lighting, shadows
 
-var width = $('#example').width(),
+var width = document.getElementById('shape-holder').offsetWidth,
 	height = width
 
 function init(){
@@ -54,7 +54,7 @@ function init(){
 	renderer.shadowMap.enabled = true
 	renderer.setSize(width, height)
 	renderer.setClearColor('rgba(120,120,120,1)')
-	$('#example').append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	var controls = new THREE.OrbitControls(camera, renderer.domElement)
 
