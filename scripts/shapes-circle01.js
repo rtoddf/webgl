@@ -4,19 +4,18 @@ var renderer,
 	light
 
 var π = Math.PI,
-	container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width() * .7
+	container = document.getElementById('shape-holder'),
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = canvasWidth * .7
 
 init()
 
 function init(){
-
 	renderer = new THREE.WebGLRenderer({
 		antialias: true,
 		alpha: true
 	})
-	renderer.setClearColor(0x333333)
+	renderer.setClearColor(0xffffff)
 	renderer.setPixelRatio(devicePixelRatio)
 	renderer.setSize(canvasWidth, canvasHeight)
 	container.append(renderer.domElement)

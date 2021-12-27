@@ -1,16 +1,16 @@
-var canvasWidth = $('#example').width(),
-	canvasHeight = $('#example').width() * .6
+var canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = document.getElementById('shape-holder').offsetWidth * .6
 
 var renderer = new THREE.WebGLRenderer({
 	// canvas: document.getElementById('example')
 	// canvas: $('#example').get(0),
 	antialias: true
 });
-renderer.setClearColor(0x333333)
+renderer.setClearColor(0xffffff)
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(canvasWidth, canvasHeight)
 
-$('#example').append(renderer.domElement)
+document.getElementById('shape-holder').append(renderer.domElement)
 
 var camera = new THREE.PerspectiveCamera( 35, canvasWidth/canvasHeight, 0.1, 3000 );
 var scene = new THREE.Scene();
@@ -21,9 +21,9 @@ scene.add(light)
 var light2 = new THREE.PointLight( 0xffffff, .5 );
 scene.add(light2)
 
-var geometry = new THREE.CubeGeometry( 200,200,200 );
+var geometry = new THREE.CubeGeometry( 300,100,200 );
 var material = new THREE.MeshLambertMaterial({
-	color: 0xfff3e2
+	color: 0xae0000
 });
 var mesh = new THREE.Mesh(geometry, material)
 mesh.position.set(0,0,-1000)

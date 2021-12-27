@@ -1,16 +1,12 @@
-var scene, container, camera, geometry, material, light, mesh, renderer,
+var scene, camera, geometry, material, light, mesh, renderer,
 	π = Math.PI
 
 init()
 animate()
 
 function init(){
-	console.log('sccgmlmr')
-
 	scene = new THREE.Scene()
-
-	container = $('#example')
-
+	container = document.getElementById('shape-holder')
 	camera = new THREE.PerspectiveCamera(
 		50, // feild of view
 		600 / 600, // aspect ratio
@@ -55,9 +51,9 @@ function init(){
 		antialias: true
 	})
 
-	renderer.setClearColor( 0x333333, 1);
-	renderer.setSize(600,600)
-	container.get(0).appendChild(renderer.domElement)
+	renderer.setClearColor( 0xffffff, 1);
+	renderer.setSize(400,400)
+	document.getElementById('shape-holder').appendChild(renderer.domElement)
 }
 
 function animate(){

@@ -3,9 +3,8 @@ var camera,
 	renderer
 
 var π = Math.PI,
-	container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width() * .7
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = canvasWidth * .7
 
 init();
 
@@ -18,7 +17,7 @@ function init() {
 	renderer.setClearColor(0x333333)
 	renderer.setPixelRatio(devicePixelRatio)
 	renderer.setSize(canvasWidth, canvasHeight)
-	container.append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	scene = new THREE.Scene();
 

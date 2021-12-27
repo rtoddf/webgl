@@ -1,16 +1,14 @@
 var scene, camera, renderer
 
 var π = Math.PI,
-	container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width() * .5,
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = document.getElementById('shape-holder').offsetWidth * .5,
 	lightHelpers = false,
 	lightType = 'point'
 
 init()
 
 function init(){
-	console.log('boop')
 	renderer = new THREE.WebGLRenderer({
 		antialias: true,
 		alpha: true
@@ -20,7 +18,7 @@ function init(){
 	renderer.setClearColor(0x333333)
 	renderer.setPixelRatio(devicePixelRatio)
 	renderer.setSize(canvasWidth, canvasHeight)
-	container.append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	scene = new THREE.Scene()
 

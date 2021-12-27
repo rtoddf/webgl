@@ -1,6 +1,6 @@
 // clock object/cosign/sin/animation
 
-var width = $('#example').width(),
+var width = document.getElementById('shape-holder').offsetWidth,
 	height = width
 
 function init() {
@@ -55,7 +55,7 @@ function init() {
 	renderer.shadowMap.enabled = true;
 	renderer.setSize(width, height);
 	renderer.setClearColor('rgb(120, 120, 120)');
-	$('#example').append(renderer.domElement);
+	document.getElementById('shape-holder').append(renderer.domElement);
 
 	var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
@@ -148,7 +148,7 @@ function getSpotLight(intensity) {
 }
 
 function getDirectionalLight(intensity) {
-	var light = new THREE.DirectionalLight(0xffffff, intensity);
+	var light = new THREE.DirectionalLight(0xbaba71, intensity);
 	light.castShadow = true;
 
 	light.shadow.camera.left = -10;

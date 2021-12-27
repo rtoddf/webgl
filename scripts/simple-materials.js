@@ -1,7 +1,7 @@
 // https://www.youtube.com/watch?v=HsE_7C1tRTo
 
-var canvasWidth = $('#example').width(),
-	canvasHeight = $('#example').width() * .6
+var canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = document.getElementById('shape-holder').offsetWidth * .6
 
 var π = Math.PI
 
@@ -15,7 +15,7 @@ renderer.setClearColor(0x333333)
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(canvasWidth, canvasHeight)
 
-$('#example').append(renderer.domElement)
+document.getElementById('shape-holder').append(renderer.domElement)
 
 // camera
 var camera = new THREE.PerspectiveCamera( 35, canvasWidth/canvasHeight, 0.1, 3000 );

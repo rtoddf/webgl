@@ -7,9 +7,9 @@ var scene,
 	renderer
 
 var π = Math.PI,
-	container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width()
+	container = document.getElementById('shape-holder'),
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = document.getElementById('shape-holder').offsetWidth
 
 init()
 
@@ -20,7 +20,7 @@ function init(){
 	})
 
 	renderer.setSize(canvasWidth, canvasHeight)
-	renderer.setClearColor(0x333333)
+	renderer.setClearColor(0xffffff)
 	renderer.setPixelRatio(devicePixelRatio)
 	container.append(renderer.domElement)
 
@@ -32,7 +32,7 @@ function init(){
 		1, //near
 		5000 // far
 	)
-	camera.position.z = 175
+	camera.position.z = 225
 	scene.add(camera)
 
 	var orbit = new THREE.OrbitControls( camera, renderer.domElement );

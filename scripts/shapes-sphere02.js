@@ -8,9 +8,9 @@ var scene,
 	shape1
 
 var π = Math.PI,
-	container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width() * .7
+	container = document.getElementById('shape-holder'),
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = canvasWidth * .7
 
 init()
 
@@ -21,7 +21,7 @@ function init(){
 	});
 
 	renderer.setSize(canvasWidth, canvasHeight)
-	renderer.setClearColor(0x333333)
+	renderer.setClearColor(0xffffff)
 	renderer.setPixelRatio(devicePixelRatio)
 	container.append(renderer.domElement)
 
@@ -33,7 +33,7 @@ function init(){
 		1,
 		5000
 	);
-	camera.position.z = 500
+	camera.position.z = 300
 	scene.add(camera)
 
 	shape1 = createSphere(100, 10, 10)

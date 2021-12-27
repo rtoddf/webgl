@@ -6,9 +6,8 @@ var renderer,
 	sphere1
 
 var π = Math.PI,
-	container = $('#example'),
-	canvasWidth = container.width(),
-	canvasHeight = container.width()
+	canvasWidth = document.getElementById('shape-holder').offsetWidth,
+	canvasHeight = canvasWidth * .7
 
 init()
 
@@ -19,10 +18,10 @@ function init(){
 		alpha: true
 	})
 	
-	renderer.setClearColor(0x333333)
+	renderer.setClearColor(0xffffff)
 	renderer.setPixelRatio(devicePixelRatio)
 	renderer.setSize(canvasWidth, canvasHeight)
-	container.append(renderer.domElement)
+	document.getElementById('shape-holder').append(renderer.domElement)
 
 	// create a scene
 	scene = new THREE.Scene()

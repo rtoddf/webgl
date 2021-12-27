@@ -4,10 +4,7 @@ init();
 animate();
 
 function init() {
-
 	scene = new THREE.Scene();
-
-	container = $('#example')
 
 	camera = new THREE.PerspectiveCamera(
 		50, // Field of view
@@ -58,7 +55,7 @@ function init() {
 	renderer.setClearColor( 0xffffff, 0);
 	renderer.setSize(600, 600);
 
-	container.get(0).appendChild(renderer.domElement);
+	document.getElementById('shape-holder').appendChild(renderer.domElement);
 }
 
 function animate() {
