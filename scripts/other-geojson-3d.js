@@ -1,8 +1,6 @@
-var container_parent = $('.display') ,
-	chart_container = $('#map'),
-	margins = {top: 20, right: 20, bottom: 20, left: 70},
-	width = container_parent.width(),
-	height = container_parent.width() * .5,
+var margins = {top: 20, right: 20, bottom: 20, left: 70},
+	width = document.getElementById('display').offsetWidth,
+	height = document.getElementById('display').offsetWidth * .5,
 	radius = 228,
 	mesh,
 	graticule,
@@ -17,7 +15,7 @@ var vis,
 camera.position.z = 500;
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(width, height);
-$('#map').append(renderer.domElement);
+document.getElementById('map').append(renderer.domElement);
 
 d3.json('../data/world-50m.json', function(error, topology) {
 	if (error) throw error;
@@ -25,7 +23,7 @@ d3.json('../data/world-50m.json', function(error, topology) {
 		color: 0x666666
 	})));
 	scene.add(
-		mesh = wireframe(topojson.mesh(topology, topology.objects.land), new THREE.LineBasicMaterial({color: 0xffffff})));
+		mesh = wireframe(topojson.mesh(topology, topology.objects.land), new THREE.LineBasicMaterial({color: 0x009900})));
 	d3.timer(function(t) {
 		graticule.rotation.x = mesh.rotation.x = Math.sin(t / 11000) * Math.PI / 3 - Math.PI / 2;
 		graticule.rotation.z = mesh.rotation.z = t / 20000;

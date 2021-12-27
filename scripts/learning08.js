@@ -1,6 +1,5 @@
 // materials
-var container = $('#example'),
-	width =container.width(),
+var width = document.getElementById('shape-holder').offsetWidth,
 	height = width
 	
 
@@ -99,7 +98,7 @@ function init() {
 	var renderer = new THREE.WebGLRenderer();
 	renderer.setSize(width, height);
 	renderer.shadowMap.enabled = true;
-	container.append(renderer.domElement);
+	document.getElementById('shape-holder').append(renderer.domElement);
 	
 	var controls = new THREE.OrbitControls( camera, renderer.domElement );
 	
