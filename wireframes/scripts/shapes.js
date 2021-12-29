@@ -13,22 +13,26 @@ var settings = {
 		height: 300,
 		depth: 200,
 		segmentsWidth: 24,
-		segmentsHeight: 24
+		segmentsHeight: 24,
+		yRotation: 0.005
 	},
 	sphere: {
 		radius: 200,
 		segmentsWidth: 24,
-		segmentsHeight: 24
+		segmentsHeight: 24,
+		yRotation: 0.005
 	},
 	circle: {
 		radius: 200,
 		segmentsWidth: 50,
-		segmentsHeight: 10
+		segmentsHeight: 10,
+		yRotation: 0.005
 	},
 	cone: {
 		radius: 100,
 		height: 200,
-		segments: 50
+		segments: 50,
+		yRotation: 0.005
 	},
 	cylinder: {
 		radiusTop: 100,
@@ -36,34 +40,41 @@ var settings = {
 		height: 200,
 		segmentsRadius: 24,
 		segmentsHeight: 24,
-		openEnded: false
+		openEnded: false,
+		yRotation: 0.005
 	},
 	plane: {
 		width: 300,
 		depth: 300,
 		segmentsWidth: 10,
-		segmentsDepth: 10
+		segmentsDepth: 10,
+		yRotation: 0.005
 	},
 	dodecahedron: {
 		radius: 200,
-		detail: 0
+		detail: 0,
+		yRotation: 0.005
 	},
 	icosahedron: {
 		radius: 200,
-		detail: 0
+		detail: 0,
+		yRotation: 0.005
 	},
 	octahedron: {
 		radius: 200,
-		detail: 0
+		detail: 0,
+		yRotation: 0.005
 	},
 	tetrahedron: {
 		radius: 200,
-		detail: 0
+		detail: 3,
+		yRotation: 0.005
 	},
 	ring: {
 		innerRadius: 100,
 		outerRadius: 200,
-		segments: 32
+		segments: 32,
+		yRotation: 0.005
 	}
 	
 }

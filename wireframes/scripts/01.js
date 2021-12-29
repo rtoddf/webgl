@@ -1,7 +1,7 @@
 var camera, renderer, mesh,
 	scene = new THREE.Scene(),
-	yRotation  = 0.005,
-	meshColor = 'rgba(255,255,255,1)'
+	yRotation,
+	meshColor = 'rgba(51,51,51,1)'
 
 init();
 
@@ -38,7 +38,7 @@ function init() {
 	// sets the size
 	renderer.setSize(canvasWidth, canvasHeight);
 	// sets the bg color
-	renderer.setClearColor(0x333333, 1);
+	renderer.setClearColor(0xffffff, 1);
 
 	document.getElementById('shape-holder').append(renderer.domElement)
 
@@ -95,6 +95,8 @@ function getShape(shape){
 		color: meshColor, 
 		wireframe: true 
 	})
+
+	yRotation = settings[shape].yRotation;
 
 	mesh = new THREE.Mesh(geometry, material)
 	return mesh

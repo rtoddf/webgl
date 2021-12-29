@@ -38,6 +38,10 @@ body {
     font-size: 0.875rem;
 }
 
+canvas {
+    border: 1px solid #333;
+}
+
 a {
     font-weight: bold;
     text-decoration: none;

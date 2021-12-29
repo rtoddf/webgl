@@ -1,7 +1,7 @@
 var camera, renderer, mesh,
 	scene = new THREE.Scene(),
-	yRotation  = 0.03,
-	meshColor = 'rgba(255,255,255,1)'
+	yRotation = 0,
+	meshColor = 'rgba(51,51,51,1)'
 
 init();
 
@@ -38,7 +38,7 @@ function init() {
 	// sets the size
 	renderer.setSize(canvasWidth, canvasHeight);
 	// sets the bg color
-	renderer.setClearColor( 0x333333, 1);
+	renderer.setClearColor( 0xffffff, 1);
 
 	document.getElementById('shape-holder').append(renderer.domElement)
 
@@ -65,7 +65,7 @@ function getShape(shape){
 			settings[shape].detail
 		);
 	} else if(shape == 'tetrahedron') {
-		geometry = new THREE.CylinderGeometry(
+		geometry = new THREE.TetrahedronGeometry(
 			settings[shape].radius,
 			settings[shape].detail
 		);
@@ -87,7 +87,9 @@ function getShape(shape){
 	material = new THREE.MeshBasicMaterial({ 
 		color: meshColor, 
 		wireframe: true 
-	})
+	});
+
+	yRotation = settings[shape].yRotation;
 
 	mesh = new THREE.Mesh(geometry, material)
 	return mesh
