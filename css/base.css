@@ -121,7 +121,7 @@ select {
     /* grid-gap: 2.5rem; */
     width: 100%;
     margin: 0 auto;
-    padding: 1.5625rem;
+    /* padding: 1.5625rem; */
 }
 
 .grid > .grid {
@@ -129,7 +129,10 @@ select {
     padding: 0;
 }
 
-* columns */
+.grid > .article > .grid > div {
+    padding: 20px;
+}
+
 .grid,
 .grid[data-col="1"] {
     -ms-grid-columns: repeat(1, [col] 1fr);
