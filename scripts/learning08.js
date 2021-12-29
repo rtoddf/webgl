@@ -37,8 +37,8 @@ function init() {
 
 	// manipulate materials
 	var loader = new THREE.TextureLoader()
-	planeMaterial.map = loader.load('images/concrete.jpg')
-	planeMaterial.bumpMap = loader.load('images/concrete.jpg')
+	planeMaterial.map = loader.load('../images/concrete.jpg')
+	planeMaterial.bumpMap = loader.load('../images/concrete.jpg')
 	planeMaterial.bumpScale = 0.02
 
 	var maps = ['map', 'bumpMap']

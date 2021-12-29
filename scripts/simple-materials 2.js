@@ -72,7 +72,7 @@ var material = new THREE.MeshPhongMaterial({
 //geometry
 
 
-var geometry1 = new THREE.CubeGeometry( 100, 100, 100 );
+var geometry1 = new THREE.BoxGeometry( 100, 100, 100 );
 var mesh1 = new THREE.Mesh(geometry1, material)
 mesh1.position.z = -500
 mesh1.position.x = -100

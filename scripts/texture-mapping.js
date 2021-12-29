@@ -22,7 +22,7 @@ function init() {
 	var mapUrl = '../images/record.jpg'
 	var map = THREE.ImageUtils.loadTexture(mapUrl)
 
-	geometry = new THREE.CubeGeometry(200, 200, 200);
+	geometry = new THREE.BoxGeometry(200, 200, 200);
 	material = new THREE.MeshPhongMaterial({
 		map: map
 	});
@@ -90,7 +90,7 @@ function render() {
 	//     camera.position.set( -15, 10, 10 );
 	//     camera.lookAt( scene.position );
 
-	//     var geometry = new THREE.CubeGeometry( 5, 5, 5 );
+	//     var geometry = new THREE.BoxGeometry( 5, 5, 5 );
 	//     var material = new THREE.MeshLambertMaterial( { color: 0xFF0000 } );
 	//     var mesh = new THREE.Mesh( geometry, material );
 	//     scene.add( mesh );

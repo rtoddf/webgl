@@ -71,7 +71,7 @@ function getPlane(w, d){
 }
 
 function getCube(w, h, d){
-	geometry = new THREE.CubeGeometry( w, h, d );
+	geometry = new THREE.BoxGeometry( w, h, d );
 
 	material = new THREE.MeshPhongMaterial({
 		color: 0xffffff,

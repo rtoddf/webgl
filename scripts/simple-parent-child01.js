@@ -80,7 +80,7 @@ function animate(){
 function getCube(w, h, d, col){
 	if(col == undefined){ col = 0xffffff }
 
-	var geometry = new THREE.CubeGeometry(w, h, d)
+	var geometry = new THREE.BoxGeometry(w, h, d)
 
 	// create a shiny material
 	var material = new THREE.MeshPhongMaterial({

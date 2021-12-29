@@ -21,7 +21,7 @@ scene.add(light)
 var light2 = new THREE.PointLight( 0xffffff, .5 );
 scene.add(light2)
 
-var geometry = new THREE.CubeGeometry( 300,100,200 );
+var geometry = new THREE.BoxGeometry( 300,100,200 );
 var material = new THREE.MeshLambertMaterial({
 	color: 0xae0000
 });

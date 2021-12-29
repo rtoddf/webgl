@@ -50,7 +50,7 @@ function getShape(shape){
 	var geometry, material
 
 	if(shape == 'cube'){
-		geometry = new THREE.CubeGeometry(
+		geometry = new THREE.BoxGeometry(
 			settings[shape].width,
 			settings[shape].height,
 			settings[shape].depth

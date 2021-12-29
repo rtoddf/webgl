@@ -70,8 +70,6 @@ function createLight(type, color, int, dist){
 	if(int == undefined){ int = 2 }
 	if(dist == undefined){ dist = 2000 }
 
-		console.log('type: ', type)
-
 	switch (type) {
 	  case 'point':
 	    var lightType = new THREE.PointLight(color, int, dist)

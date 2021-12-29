@@ -16,13 +16,13 @@ function init(){
 	camera.position.z = 500
 	scene.add(camera)
 
-	geometry = new THREE.CubeGeometry(200,200,200)
+	geometry = new THREE.BoxGeometry(200,200,200)
 	material = new THREE.MeshPhongMaterial({
 		color: 0xbaba71,
 		wireframe: false
 	})
 
-	// new THREE.CubeGeometry(200,200,200)
+	// new THREE.BoxGeometry(200,200,200)
 
 	// new THREE.SphereGeometry(100,100,16)
 
