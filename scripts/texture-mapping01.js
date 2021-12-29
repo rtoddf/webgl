@@ -53,7 +53,7 @@ function createBox(w, h, d, col){
 	var geometry = new THREE.BoxGeometry(w, h, d)
 
 	var loader = new THREE.TextureLoader()
-	var texture = loader.load('../images/wood-floor.jpg')
+	var texture = loader.load('../images/materials/wood-floor.jpg')
 	texture.wrapS = THREE.RepeatWrapping
 	texture.wrapT = THREE.RepeatWrapping
 

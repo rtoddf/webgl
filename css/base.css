@@ -133,6 +133,11 @@ select {
     padding: 20px;
 }
 
+.grid > .article > .grid > div > p {
+    margin: 0;
+    padding: 0;
+}
+
 .grid,
 .grid[data-col="1"] {
     -ms-grid-columns: repeat(1, [col] 1fr);

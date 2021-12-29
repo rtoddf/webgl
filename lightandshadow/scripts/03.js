@@ -94,7 +94,7 @@ function createCylinder(radTop, radBottom, h, sRad, sHeight, open, col, texture)
 
 	if(texture){
 		var loader = new THREE.TextureLoader()
-		var texture = loader.load('../images/checkerboard.jpg')
+		var texture = loader.load('../images/materials/checkerboard.jpg')
 		texture.wrapS = THREE.RepeatWrapping
 		texture.wrapT = THREE.RepeatWrapping
 
@@ -117,7 +117,7 @@ function createPlane(w, d){
 	geometry = new THREE.PlaneGeometry(w, d);
 
 	var loader = new THREE.TextureLoader()
-	var texture = loader.load('../images/stone-wall.jpg')
+	var texture = loader.load('../images/materials/stone-wall.jpg')
 	texture.wrapS = THREE.RepeatWrapping
 	texture.wrapT = THREE.RepeatWrapping
 
