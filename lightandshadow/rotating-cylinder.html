@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Web GL</title>
+		<link href="../css/base.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="grid">
+				<h2>Cylinder with Lighting</h2>
+				<div id="shape-holder" class="half"></div>
+				<ul class="list-unstyled">
+					<li>radiusTop — Radius of the cylinder at the top.</li>
+					<li>radiusBottom — Radius of the cylinder at the bottom.</li>
+					<li>height — Height of the cylinder.</li>
+					<li>radiusSegments — Number of segmented faces around the circumference of the cylinder.</li>
+					<li>heightSegments — Number of rows of faces along the height of the cylinder.</li>
+					<li>openEnded - A Boolean indicating whether or not to cap the ends of the cylinder.</li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="../scripts/libs/three.min.js"></script>
+		<script src="./scripts/rotating-cylinder.js"></script>
+	</body>
+</html>

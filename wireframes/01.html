@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Web GL</title>
+		<link href="../css/base.css" rel="stylesheet">
+	</head>
+
+	<body>	
+		<div class="container">
+			<div class="grid">
+				<h2>Simple Shape Wireframe</h2>
+				<select id="shape-select">
+					<option value="">Choose a shape</option>
+					<option value="cube">Cube</option>
+					<option value="sphere">Sphere</option>
+					<option value="circle">Circle</option>
+					<option value="cone">Cone</option>
+					<option value="cylinder">Cylinder</option>
+				</select>
+				<div id="shape-holder" class="half"></div>
+			</div>
+		</div>
+
+		<script src="../scripts/libs/three.min.js"></script>
+		<script src="./scripts/shapes.js"></script>
+		<script src="./scripts/01.js"></script>
+	</body>
+</html>
